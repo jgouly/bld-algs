@@ -1,0 +1,29 @@
+name: pages
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install alg-list-gen
+      env:
+        ALG_LIST_REV: ec43d549c298a27a981610cc2c11ec16630f054d
+      run: cargo install --git https://github.com/jgouly/cube-tools --rev $ALG_LIST_REV --bin alg-list-gen
+    - name: Build pages
+      run: |
+        mkdir tmp
+        alg-list-gen < 3c > tmp/3c.html
+        git fetch
+        git checkout gh-pages
+        mv tmp/* ./
+        git diff --quiet --exit-code && exit
+        git add 3c.html
+        git config --global user.name 'Auto Generated'
+        git config --global user.email 'none@none'
+        git commit -am "Auto generated: $(date)"
+        git push
+
