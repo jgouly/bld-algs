@@ -1,0 +1,22 @@
+[U': R2 U R U R' U' R' U' R' U R']
+[L: [M, U L' U']]
+R2 U R U R' U' R' U' R' U R'
+[S, R' F R]
+R2 Fw2 R2 U R2 Fw2 R2 U
+[L': [M', U L U']]
+[L U' L: [S', L2]]
+[U, L E L']
+[S', Rw' D' Rw]
+[D': U R U R' U' R' U' R' U R]
+U' M U' M' U' M U' M'
+U R U R' U' R' U' R' U R
+[U': [R' E' R, U']]
+[U, R' S2 R]
+[U, L E' L']
+[U, R S' R']
+[E: [U, L E' L']]
+[U': [R' E R, U']]
+[E': [U, L' E L]]
+[U': [R E' R', U']]
+[U, L E2 L']
+[U, L' E L]
