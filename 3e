@@ -137,3 +137,26 @@ M' U' M' U' M U' M' U' M2
 [U Rw' U': [M', U2]]
 [R Uw' R: [E', R2]]
 [S': [U, L' E L]]
+U' R2 Fw2 R2 U' R2 Fw2 R2
+Rw' D' S Rw2 S Rw2 D Rw
+[M', U2]
+[U: [R' F' R, S]]
+U R2 Fw2 R2 U R2 Fw2 R2
+[D: [S', R' F R]]
+[Lw' U: [R' E R, U2]]
+[R' F' R': [R F2 R', S']]
+[L F': [E', L2']]
+Rw U L2 S' L2 S U' Rw'
+Uw2 M' Uw2 M'
+[D': [S', R F R']]
+R2 U R2' Fw2 R2 U R2' Fw2
+[R' F: [E, R2]]
+[U D' L': [E', L2]]
+R U R2' Fw2 R2 U R2' Fw2 R
+[R2' F: [E, R2]]
+[U' D R: [E, R2']]
+[L2 F': [E', L2']]
+[U' D R': [E', R2]]
+[F': [E', L2']]
+[U D' L: [E, L2']]
+[F: [E, R2]]
