@@ -85,3 +85,28 @@ U M' U M' U2 M U M U'
 [M', U' L U]
 [U' R' U, M]
 [M', U R' U']
+R U' R U R U R U' R' U' R2'
+[S', Rw U' Rw']
+[U, R U' R U R U R U' R' U' R2']
+[M, R' U' R U]
+R2 Fw2 R2 U' R2 Fw2 R2 U'
+[M', R U' R' U]
+[D: R2 Fw2 R2 U' R2 Fw2 R2 U']
+[S' R' F R: [S, R2]]
+[U: [L E L', U]]
+R' Rw2 U' R' U M2 U' R U R'
+[M2, R' U' R U]
+U M U M' U M U M'
+[R U R: [S, R2']]
+[U', R' E' R]
+[E': [U', R' E R]]
+R U R U R U R' U' R' U' R2'
+[U: [L E' L', U]]
+[U', R E2 R']
+[U', R' E R]
+[U', R' E2 R]
+[U', R E' R']
+[E: [U', R E' R']]
+R U R U R U' R' U' R' U'
+M U M' U' R' U M U' Rw
+[U: [L' E L, U]]
