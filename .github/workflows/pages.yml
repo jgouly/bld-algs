@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install alg-list-gen
       env:
-        ALG_LIST_REV: e76e4ccae28feefd8c4ad8404247bf760f669685
+        ALG_LIST_REV: e2ccfa66482d5cc6ce43823f00b6aa07a35c01d2
       run: cargo install --git https://github.com/jgouly/cube-tools --rev $ALG_LIST_REV --bin alg-list-gen
     - name: Build pages
       run: |
