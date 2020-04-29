@@ -16,8 +16,8 @@ jobs:
     - name: Build pages
       run: |
         mkdir tmp
-        alg-list-gen < 3c > tmp/3c.html
-        alg-list-gen < 3e > tmp/3e.html
+        alg-list-gen --scheme scheme.json < 3c > tmp/3c.html
+        alg-list-gen --scheme scheme.json < 3e > tmp/3e.html
         git fetch
         git checkout gh-pages
         mv tmp/* ./
