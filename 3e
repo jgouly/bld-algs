@@ -254,6 +254,7 @@ M Uw2 M Uw2
 [M': [U R' U', M2]]
 M U M' U M U M' U
 [R' F R U': [M, U2]]
+[U R' B R: [S, R2]]
 U' M' U M' U2 M U M U
 [D': [R U R U', M']]
 M U' M' U' M U' M' U'
