@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>alg list</title>
+    <style type="text/css">
+      html {
+        font-family: "Courier New";
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+    <style id="current_search"></style>
+    <script type="text/javascript">
+      function filter(e) {
+        const sheet = document.getElementById('current_search');
+        const p0 = document.getElementById('p0');
+        const p1 = document.getElementById('p1');
+        const p2 = document.getElementById('p2');
+        const p0v = p0.value == '' ? '*' : `.${p0.value}`;
+        const p1v = p1.value == '' ? '*' : `.${p1.value}`;
+        const p2v = p2.value == '' ? '*' : `.${p2.value}`;
+        sheet.textContent = `#algs > * > * > * { display:none; }
+                             #algs > ${p0v} > ${p1v} > ${p2v} { display: block; }`;
+      }
+
+      window.addEventListener('load', e => {
+        document.querySelectorAll('input').forEach(el => {
+          el.addEventListener('input', filter);
+        });
+      });
+    </script>
+  </head>
+  <body>
+<div id="algs">
+<div class='ULB'><div class='FLU'><div><a href="https://alg.cubing.net/?&type=alg&alg=R-_D-_R_U-_R-_D_R2_U2_R-_U_R_U_R-_U2_" target="_blank">[ULB] [LUF] R' D' R U' R' D R2 U2 R' U R U R' U2</a></div></div></div>
+<div class='ULB'><div class='LUF'><div><a href="https://alg.cubing.net/?&type=alg&alg=U_R-_U-_R_U2_R_D_R-_U-_R_D-_R2_U_R_U-_R-_U_R_U_" target="_blank">[ULB] [FLU] U R' U' R U2 R D R' U' R D' R2 U R U' R' U R U</a></div></div></div>
+<div class='ULB'><div class='BRU'><div><a href="https://alg.cubing.net/?&type=alg&alg=U2_R_U_R-_U2_R-_D-_R_U_R-_D_R2_U-_R-_U_R_U-_R-_" target="_blank">[ULB] [RUB] U2 R U R' U2 R' D' R U R' D R2 U' R' U R U' R'</a></div></div></div>
+<div class='ULB'><div class='RUB'><div><a href="https://alg.cubing.net/?&type=alg&alg=R2_D-_R_U_R-_D_R_U_R_U-_R-_U-_R_U-_" target="_blank">[ULB] [BRU] R2 D' R U R' D R U R U' R' U' R U'</a></div></div></div>
+<div class='ULB'><div class='FRD'><div><a href="https://alg.cubing.net/?&type=alg&alg=U-_R_U2_R-_U_R2_D_R-_U_R_D-_R2_U2_" target="_blank">[ULB] [RDF] U' R U2 R' U R2 D R' U R D' R2 U2</a></div></div></div>
+<div class='ULB'><div class='RDF'><div><a href="https://alg.cubing.net/?&type=alg&alg=D_R-_U2_R_U-_R2_D-_R_U-_R-_D_R2_U-_D-_" target="_blank">[ULB] [FRD] [D: R' U2 R U' R2 D' R U' R' D R2 U']</a></div></div></div>
+<div class='ULB'><div class='LFD'><div><a href="https://alg.cubing.net/?&type=alg&alg=D_U-_R_U2_R-_U_R2_D_R-_U_R_D-_R2_U2_D-_" target="_blank">[ULB] [FDL] [D: U' R U2 R' U R2 D R' U R D' R2 U2]</a></div></div></div>
+<div class='ULB'><div class='FDL'><div><a href="https://alg.cubing.net/?&type=alg&alg=D2_R-_U2_R_U-_R2_D-_R_U-_R-_D_R2_U-_D2-_" target="_blank">[ULB] [LFD] [D2: R' U2 R U' R2 D' R U' R' D R2 U']</a></div></div></div>
+<div class='ULB'><div class='BLD'><div><a href="https://alg.cubing.net/?&type=alg&alg=D2_U-_R_U2_R-_U_R2_D_R-_U_R_D-_R2_U2_D2-_" target="_blank">[ULB] [LDB] [D2: U' R U2 R' U R2 D R' U R D' R2 U2]</a></div></div></div>
+<div class='ULB'><div class='LDB'><div><a href="https://alg.cubing.net/?&type=alg&alg=D-_R-_U2_R_U-_R2_D-_R_U-_R-_D_R2_U-_D_" target="_blank">[ULB] [BLD] [D': R' U2 R U' R2 D' R U' R' D R2 U']</a></div></div></div>
+<div class='ULB'><div class='RBD'><div><a href="https://alg.cubing.net/?&type=alg&alg=D-_U-_R_U2_R-_U_R2_D_R-_U_R_D-_R2_U2_D_" target="_blank">[ULB] [BDR] [D': U' R U2 R' U R2 D R' U R D' R2 U2]</a></div></div></div>
+<div class='ULB'><div class='BDR'><div><a href="https://alg.cubing.net/?&type=alg&alg=R-_U2_R_U-_R2_D-_R_U-_R-_D_R2_U-_" target="_blank">[ULB] [RBD] R' U2 R U' R2 D' R U' R' D R2 U'</a></div></div></div>
+
+</div>
+  </body>
+</html>
+
