@@ -10,3 +10,6 @@ U' R U2 R' U R2 D R' U R D' R2 U2
 [D': R' U2 R U' R2 D' R U' R' D R2 U']
 [D': U' R U2 R' U R2 D R' U R D' R2 U2]
 R' U2 R U' R2 D' R U' R' D R2 U'
+U' R' D' R U' R' D R2 U' R' U' R U2 R' U
+F R' F' R U' S U R' U' S' R' U R
+U R U R2' D' R U R' D R2 U2' R'
