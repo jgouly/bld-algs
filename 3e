@@ -1,8 +1,10 @@
+[L2 U: [L2', S']]
 [U': R2 U R U R' U' R' U' R' U R']
 [L: [M, U L' U']]
 R2 U R U R' U' R' U' R' U R'
 [S, R' F R]
 R2 Fw2 R2 U R2 Fw2 R2 U
+[R' F' R: [S, R' F2 R]]
 [L': [M', U L U']]
 [L U' L: [S', L2]]
 [U, L E L']
