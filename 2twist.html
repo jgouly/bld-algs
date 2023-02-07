@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>alg list</title>
+    <style type="text/css">
+      html {
+        font-family: "Courier New";
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+    <style id="current_search"></style>
+    <script type="text/javascript">
+      function filter(e) {
+        const sheet = document.getElementById('current_search');
+        const p0 = document.getElementById('p0');
+        const p1 = document.getElementById('p1');
+        const p2 = document.getElementById('p2');
+        const p0v = p0.value == '' ? '*' : `.${p0.value}`;
+        const p1v = p1.value == '' ? '*' : `.${p1.value}`;
+        const p2v = p2.value == '' ? '*' : `.${p2.value}`;
+        sheet.textContent = `#algs > * > * > * { display:none; }
+                             #algs > ${p0v} > ${p1v} > ${p2v} { display: block; }`;
+      }
+
+      window.addEventListener('load', e => {
+        document.querySelectorAll('input').forEach(el => {
+          el.addEventListener('input', filter);
+        });
+      });
+    </script>
+  </head>
+  <body>
+<div id="algs">
+<div class='RFU'><div class='LUF'><div><a href="https://alg.cubing.net/?&type=alg&alg=U-_R-_D-_R_D_R-_D-_R_U_R-_D_R_D-_R-_D_R_" target="_blank">[FUR] [FLU] [U', R' D' R D R' D' R]</a></div></div></div>
+<div class='RFU'><div class='BUL'><div><a href="https://alg.cubing.net/?&type=alg&alg=U2_R-_D-_R_D_R-_D-_R_U2-_R-_D_R_D-_R-_D_R_" target="_blank">[FUR] [LBU] [U2, R' D' R D R' D' R]</a></div></div></div>
+<div class='RFU'><div class='RUB'><div><a href="https://alg.cubing.net/?&type=alg&alg=U_R-_D-_R_D_R-_D-_R_U-_R-_D_R_D-_R-_D_R_" target="_blank">[FUR] [BRU] [U, R' D' R D R' D' R]</a></div></div></div>
+<div class='RFU'><div class='RDF'><div><a href="https://alg.cubing.net/?&type=alg&alg=R-_D-_R_U-_R-_U_R_U-_R-_D_R_U_R-_U-_R_U_R-_R_" target="_blank">[FUR] [FRD] [R': [D', R U' R' U R U' R']]</a></div></div></div>
+<div class='FUR'><div class='FRD'><div><a href="https://alg.cubing.net/?&type=alg&alg=R-_R_U-_R-_U_R_U-_R-_D-_R_U_R-_U-_R_U_R-_D_R_" target="_blank">[RFU] [RDF] [R': [R U' R' U R U' R', D']]</a></div></div></div>
+
+</div>
+  </body>
+</html>
+
