@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install alg-list-gen
       env:
-        ALG_LIST_REV: d6354a6aa7d5338135aa519f46307da26bfd9fff
+        ALG_LIST_REV: 8ce03a8e2ed75dfcaf3b291f4ee1da0fd863fe0a
       run: cargo install --git https://github.com/jgouly/cube-tools --rev $ALG_LIST_REV alg-list-gen
     - name: Build pages
       run: |
@@ -20,10 +20,11 @@ jobs:
         alg-list-gen --scheme scheme.json < 3e > tmp/3e.html
         alg-list-gen --scheme scheme.json < parity > tmp/parity.html
         alg-list-gen --scheme scheme.json < ltct > tmp/ltct.html
+        alg-list-gen --scheme scheme.json < 2twist > tmp/2twist.html
         git fetch
         git checkout gh-pages
         mv tmp/* ./
-        git add 3c.html 3e.html parity.html ltct.html
+        git add 3c.html 3e.html parity.html ltct.html 2twist.html
         git config --global user.name 'Auto Generated'
         git config --global user.email 'none@none'
         git commit -m "Auto generated: $(date)"
