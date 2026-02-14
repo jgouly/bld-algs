@@ -89,7 +89,7 @@ U M' U M' U2 M U M U'
 [M', U R' U']
 R U' R U R U R U' R' U' R2'
 [S', Rw U' Rw']
-[U, R U' R U R U R U' R' U' R2']
+[U: R U' R U R U R U' R' U' R2']
 [M, R' U' R U]
 R2 Fw2 R2 U' R2 Fw2 R2 U'
 [M', R U' R' U]
